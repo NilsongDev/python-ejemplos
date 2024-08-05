@@ -18,12 +18,14 @@ import random
 numero_secreto = random.randint(1, 10)
 
 # Pedir al usuario que adivine el número
-adivinanza = int(input("Adivina el número secreto (entre 1 y 10): "))
+print("el numero secreo es: {numero_secreto}")
+adivinanza = int(input("Adivina el número secreto (entre 1 y 10):  "))
 
 # Comparar la adivinanza del usuario con el número secreto
 if adivinanza == numero_secreto:
-    print("¡Felicidades! Adivinaste el número secreto.")
+    print("¡Felicidades! Adivinaste el número secreto. {numero_secreto}")
 else:
     print(f"Lo siento, no adivinaste. El número secreto era {numero_secreto}.")
+
 
 

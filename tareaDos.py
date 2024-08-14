@@ -17,13 +17,13 @@ nombres = [
 magos = ["Harry Houdini", "David Blaine", "Teller"]
 cientificos = ["Newton", "Hawking", "Einstein"]
 
-# Función para separar los nombres en tres grupos
+# Función para separar los nombres en tres grupos mago_list cientificos_list otros_list
 def separar_nombres_simple_1(nombres):
     magos_list = []
     cientificos_list = []
     otros_list = []
 
-    for nombre in nombres:
+    for nombre in nombres:        
         if nombre in magos:
             magos_list.append(nombre)
         elif nombre in cientificos:
